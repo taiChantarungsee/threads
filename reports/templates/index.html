@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+
+	<h1>Please zoom in using the tools to the right of the table</h1>
+	<a class="btn btn-info" href="{% url 'district' %} ">Click here for district graph</a>
+
+     {{ div | safe }}
+</body>
+    
+    {{ script | safe }}
+
+{% endblock content %}
